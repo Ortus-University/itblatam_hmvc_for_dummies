@@ -33,7 +33,7 @@ COPY ./ ${APP_DIR}/
 
 # Make sure dependencies are installed
 RUN cd ${APP_DIR} && box install --production
-RUN box install coldbox
+RUN box install coldbox@6.8
 
 # WARM UP THE SERVER
 RUN ${BUILD_DIR}/util/warmup-server.sh
