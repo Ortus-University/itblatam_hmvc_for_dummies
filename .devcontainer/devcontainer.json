@@ -3,7 +3,16 @@
 		"dockerfile": "Dockerfile"
 	},
 	"extensions": [
-		"ms-azuretools.vscode-docker"
+		"ms-azuretools.vscode-docker",
+		"KamasamaK.vscode-cfml",
+		"ortus-solutions.vscode-commandbox",
+		"ortus-solutions.vscode-coldbox",
+		"ortus-solutions.vscode-testbox",
+		"shardulm94.trailing-spaces",
+		"esbenp.prettier-vscode",
+		"PKief.material-icon-theme",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"mhutchie.git-graph"
 	],
 	"forwardPorts": [32156]
 }
