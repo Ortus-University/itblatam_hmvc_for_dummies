@@ -3,6 +3,8 @@ component {
 	function configure() {
 		// Set Full Rewrites
 		setFullRewrites( true );
+		setBaseUrl( "https://#getHTTPRequestData( false ).headers[ "x-forwarded-host" ]#" );
+		setMultiDomainDiscovery(false);
 
 		/**
 		 * --------------------------------------------------------------------------
