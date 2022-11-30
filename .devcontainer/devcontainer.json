@@ -12,7 +12,8 @@
 		"esbenp.prettier-vscode",
 		"PKief.material-icon-theme",
 		"VisualStudioExptTeam.vscodeintellicode",
-		"mhutchie.git-graph"
+		"mhutchie.git-graph",
+		"formulahendry.auto-close-tag"
 	],
 	"forwardPorts": [32156]
 }
