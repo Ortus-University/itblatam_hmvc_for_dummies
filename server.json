@@ -1,6 +1,9 @@
 {
     "name":"QuickstartTest",
     "web":{
+        "http":{
+            "port":"32156"
+        },
         "rewrites":{
             "enable":"true"
         }
