@@ -4,5 +4,6 @@
 	},
 	"extensions": [
 		"ms-azuretools.vscode-docker"
-	]
+	],
+	"forwardPorts": [8080]
 }
