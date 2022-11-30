@@ -33,3 +33,4 @@ COPY ./ ${APP_DIR}/
 
 # Make sure dependencies are installed
 RUN cd ${APP_DIR} && box install --production
+RUN cd ${APP_DIR} && box install coldbox@6.8
