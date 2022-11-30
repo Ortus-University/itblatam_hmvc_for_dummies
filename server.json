@@ -1,11 +1,12 @@
 {
-    "name":"QuickstartTest",
-    "web":{
-        "http":{
-            "port":"32156"
-        },
-        "rewrites":{
-            "enable":"true"
-        }
-    }
+	"name": "QuickstartTest",
+	"openBrowser": "false",
+	"web": {
+		"http": {
+			"port": "32156"
+		},
+		"rewrites": {
+			"enable": "true"
+		}
+	}
 }

@@ -32,5 +32,4 @@ ENV HEALTHCHECK_URI "http://127.0.0.1:${PORT}/healthcheck"
 COPY ./ ${APP_DIR}/
 
 # Make sure dependencies are installed
-RUN cd ${APP_DIR} && box install --production
-RUN cd ${APP_DIR} && box install coldbox@6.8
+RUN cd ${APP_DIR} && box install commandbox-dotenv,commandbox-cfconfig,commandbox-cfformat
