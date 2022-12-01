@@ -1,4 +1,8 @@
 {
+	"hostRequirements": {
+		"cpus": 2
+	},
+	"updateContentCommand": "box install coldbox",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -13,7 +17,16 @@
 		"PKief.material-icon-theme",
 		"VisualStudioExptTeam.vscodeintellicode",
 		"mhutchie.git-graph",
-		"formulahendry.auto-close-tag"
+		"formulahendry.auto-close-tag",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"Tyriar.lorem-ipsum",
+		"sperovita.alpinejs-syntax-highlight"
 	],
+	"portsAttributes": {
+		"32156": {
+		  "label": "Application",
+		  "onAutoForward": "openPreview"
+		}
+	  },
 	"forwardPorts": [32156]
 }
