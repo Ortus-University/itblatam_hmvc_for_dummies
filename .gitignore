@@ -1,3 +1,5 @@
+coldboxDB/**
+
 # General Ignores + IDE
 .DS_Store
 settings.xml

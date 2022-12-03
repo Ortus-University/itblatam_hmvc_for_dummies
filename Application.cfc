@@ -10,6 +10,19 @@ component {
 	this.sessionManagement = true;
 	this.sessionTimeout    = createTimespan( 0, 0, 30, 0 );
 	this.setClientCookies  = true;
+	this.datasources[ "coldbox" ] = {
+		class: 'org.hsqldb.jdbcDriver',
+		//bundleName: 'org.hsqldb.hsqldb',
+		//bundleVersion: '2.4.0',
+		connectionString: 'jdbc:hsqldb:file:coldboxDB/coldbox',
+		username: 'sa',
+		password: "",
+		blob: true,
+		clob: true,
+		storage: true
+	};
+	this.defaultdatasource = "coldbox";
+	this.datasource = "coldbox";
 
 	// Java Integration
 	this.javaSettings = {
@@ -48,7 +61,17 @@ component {
 	public boolean function onRequestStart( string targetPage ) {
 		// Process ColdBox Request
 		application.cbBootstrap.onRequestStart( arguments.targetPage );
-
+		/*
+		queryExecute("CREATE TABLE Persons (
+			PersonID int,
+			LastName varchar(255),
+			FirstName varchar(255),
+			Address varchar(255),
+			City varchar(255)
+		)");
+		var result = queryExecute("select * from Persons");
+		writeDump( result );
+		*/
 		return true;
 	}
 
