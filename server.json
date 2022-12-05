@@ -1,18 +1,18 @@
 {
-    "name":"QuickstartTest",
-    "openBrowser":"false",
-    "web":{
-        "http":{
-            "port":"32156"
-        },
-        "rewrites":{
-            "enable":"true"
-        }
-    },
-    "jvm":{
-        "args":"-Dlucee-extensions=6DD4728A-AB0C-4F67-9DCE1A91A8ACD114"
-    },
-    "cfconfig":{
-        "file":".cfconfig.json"
-    }
+	"name": "QuickstartTest",
+	"openBrowser": "false",
+	"web": {
+		"http": {
+			"port": "32156"
+		},
+		"rewrites": {
+			"enable": "true"
+		}
+	},
+	"jvm": {
+		"args": "-Dlucee.extensions=6DD4728A-AB0C-4F67-9DCE1A91A8ACD114"
+	},
+	"cfconfig": {
+		"file": ".cfconfig.json"
+	}
 }

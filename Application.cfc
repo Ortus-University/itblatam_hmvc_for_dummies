@@ -69,9 +69,10 @@ component {
 			Address varchar(255),
 			City varchar(255)
 		)");
-		var result = queryExecute("select * from Persons");
-		writeDump( result );
 		*/
+		var result = queryExecute("select * from Persons");
+		writeDump( COLDBOX_APP_ROOT_PATH );
+		writeDump( result );
 		return true;
 	}
 
