@@ -1,6 +1,26 @@
 {
+	"hostRequirements": {
+		"cpus": 2
+	},
+	"updateContentCommand": "box install coldbox",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
+	"extensions": [
+		"ms-azuretools.vscode-docker",
+		"KamasamaK.vscode-cfml",
+		"ortus-solutions.vscode-commandbox",
+		"ortus-solutions.vscode-coldbox",
+		"ortus-solutions.vscode-testbox",
+		"shardulm94.trailing-spaces",
+		"esbenp.prettier-vscode",
+		"PKief.material-icon-theme",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"mhutchie.git-graph",
+		"formulahendry.auto-close-tag",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"Tyriar.lorem-ipsum",
+		"sperovita.alpinejs-syntax-highlight"
+	],
 	"forwardPorts": [ 32156 ]
 }
