@@ -13,7 +13,8 @@ FROM ortussolutions/commandbox
 
 # Metadata
 LABEL maintainer "Ortus Solutions <info@ortussolutions.com>"
-LABEL repository "https://github.com/Ortus-Solutions/docker-commandbox"
+LABEL repository "https://github.com/Ortus-University/docker-commandbox"
+
 
 # Install Lucee Extensions (Optional)
 # UUID (Package ID);name=Name Of Extension;version=bundle.version.number (,[UUID;name;version])
