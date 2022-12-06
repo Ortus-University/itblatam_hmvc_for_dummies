@@ -27,6 +27,6 @@
 		  "label": "Application",
 		  "onAutoForward": "openPreview"
 		}
-	  },
+	},
 	"forwardPorts": [32156]
 }
