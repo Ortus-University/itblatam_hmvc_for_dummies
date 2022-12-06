@@ -32,5 +32,8 @@ ENV HEALTHCHECK_URI "http://127.0.0.1:${PORT}/healthcheck"
 # Copy application files to root - Uses .dockerignore to ignore files
 COPY ./ ${APP_DIR}/
 
+
+## Force install commandbox so we restore our modules
+RUN RUN cd ${APP_DIR} && box upgrade --force
 # Make sure dependencies are installed
-RUN cd ${APP_DIR} && box install commandbox-dotenv,commandbox-cfconfig,commandbox-cfformat
+RUN box install commandbox-dotenv,commandbox-cfconfig,commandbox-cfformat
