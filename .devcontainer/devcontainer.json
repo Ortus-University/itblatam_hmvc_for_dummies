@@ -1,6 +1,6 @@
 {
 	"hostRequirements": {
-		"cpus": 4
+		"cpus": 2
 	},
 	"updateContentCommand": "box install coldbox",
 	"build": {
@@ -22,11 +22,5 @@
 		"Tyriar.lorem-ipsum",
 		"sperovita.alpinejs-syntax-highlight"
 	],
-	"portsAttributes": {
-		"32156": {
-		  "label": "Application",
-		  "onAutoForward": "openPreview"
-		}
-	},
-	"forwardPorts": [32156, 5000]
+	"forwardPorts": [8080]
 }
