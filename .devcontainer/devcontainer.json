@@ -1,6 +1,6 @@
 {
-	"forwardPorts": [32156],
 	"build": {
 		"dockerfile": "Dockerfile"
-	}
+	},
+	"forwardPorts": [ 32156 ]
 }
