@@ -28,5 +28,5 @@
 		  "onAutoForward": "openPreview"
 		}
 	},
-	"forwardPorts": [32156]
+	"forwardPorts": [32156, 5000]
 }
