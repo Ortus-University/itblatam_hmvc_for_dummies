@@ -14,5 +14,6 @@
 	},
 	"cfconfig": {
 		"file": ".cfconfig.json"
-	}
+	},
+	"profile": "development"
 }
