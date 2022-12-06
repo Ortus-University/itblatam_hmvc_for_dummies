@@ -33,7 +33,7 @@ ENV HEALTHCHECK_URI "http://127.0.0.1:${PORT}/healthcheck"
 COPY ./ ${APP_DIR}/
 
 
-## Force install commandbox so we restore our modules
-RUN cd ${APP_DIR} && box upgrade --force
+# Force install commandbox so we restore our modules
+# RUN cd ${APP_DIR} && box upgrade --force
 # Make sure dependencies are installed
-RUN box install commandbox-dotenv,commandbox-cfconfig,commandbox-cfformat
+RUN cd ${APP_DIR} && box install commandbox-dotenv,commandbox-cfconfig,commandbox-cfformat
