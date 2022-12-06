@@ -27,7 +27,7 @@ LABEL repository "https://github.com/Ortus-Solutions/docker-commandbox"
 # ENV CFPM_INSTALL=
 
 # ColdBox Healthcheck
-ENV HEALTHCHECK_URI "http://127.0.0.1:${PORT}/healthcheck"
+# ENV HEALTHCHECK_URI "http://127.0.0.1:${PORT}/healthcheck"
 
 # Copy application files to root - Uses .dockerignore to ignore files
 COPY ./ ${APP_DIR}/
