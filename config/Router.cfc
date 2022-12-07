@@ -3,7 +3,12 @@ component {
 	function configure() {
 		// Set Full Rewrites
 		setFullRewrites( true );
-		setBaseUrl( "https://#getHTTPRequestData( false ).headers[ "x-forwarded-host" ]#" );
+		var headers = getHTTPRequestData( false ).headers
+		if( headers.keyExists( "x-forwarded-host" ) ){
+			setBaseUrl( "https://#headers[ "x-forwarded-host" ]#" );
+		} else {
+			setBaseUrl( "https://#cgi.SERVER_NAME#" );
+		}
 		setMultiDomainDiscovery(false);
 
 		/**
