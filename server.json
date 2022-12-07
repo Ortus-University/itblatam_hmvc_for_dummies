@@ -7,7 +7,8 @@
 		},
 		"rewrites": {
 			"enable": "true"
-		}
+		},
+		"useProxyForwardedIP": "true"
 	},
 	"jvm": {
 		"args": "-Dlucee.extensions=6DD4728A-AB0C-4F67-9DCE1A91A8ACD114"
