@@ -2,7 +2,7 @@
 	"hostRequirements": {
 		"cpus": 2
 	},
-	"updateContentCommand": "box install coldbox",
+	"updateContentCommand": "box install coldbox,testbox",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
