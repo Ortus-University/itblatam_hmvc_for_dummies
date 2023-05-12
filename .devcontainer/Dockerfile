@@ -9,7 +9,7 @@
 
 # We pull the latest image, you can change this to a specific tag or CFML engine, which we recommend.
 # https://hub.docker.com/r/ortussolutions/commandbox
-FROM ortussolutions/commandbox
+FROM ortussolutions/commandbox:3.6.4
 
 # Metadata
 LABEL maintainer "Ortus Solutions <info@ortussolutions.com>"
