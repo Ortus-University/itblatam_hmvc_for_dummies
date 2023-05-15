@@ -34,6 +34,6 @@ COPY ./ ${APP_DIR}/
 
 
 # Force install commandbox so we restore our modules
-RUN rm -rf /usr/local/lib/CommandBox
+# RUN rm -rf /usr/local/lib/CommandBox
 # Make sure dependencies are installed
 RUN cd ${APP_DIR} && box install commandbox-dotenv,commandbox-cfconfig,commandbox-cfformat,commandbox-bullet-train --verbose
